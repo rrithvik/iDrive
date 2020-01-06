@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rrithvik.idrive.MainActivity"
+    android:background="@android:color/black">
+
+    <ToggleButton
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/timetext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/oval"
+        android:checked="true"
+        android:longClickable="true"
+        android:onClick="onCheckedChanged"
+        android:textColor="@android:color/background_light"
+        android:textOff="@string/stopped"
+        android:textOn="@string/running"
+        android:textStyle="normal|bold" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/running_man_whitebg"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/speedtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/distancetext"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="@string/instantaneous_speed"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/total_time"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:visibility="visible"/>
+
+
+    <TextView
+        android:id="@+id/distancetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/total_distance"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="49dp"
+        android:text="Please Restart App If First Time Launching"
+        android:textColor="@android:color/white"
+        tools:text="Please Restart App If First Time Launching" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Message and Data Rates May Apply"
+        android:textColor="@android:color/white"
+        android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp"
+        android:text="By using this app, you are complying with the terms and conditions and privacy policy found on the app page in the Google Play Store"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="8sp" />
+
+
+</RelativeLayout>
+

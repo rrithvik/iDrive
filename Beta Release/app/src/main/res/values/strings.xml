@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">iDrive</string>
+    <string name="msg">Please Enable All Permissions</string>
+    <string name="total_distance">Total Distance</string>
+    <string name="total_time">Total Time:</string>
+    <string name="instantaneous_speed">Instantaneous Speed:</string>
+    <string name="start_calculating">Start Calculating</string>
+    <string name="pause">Pause</string>
+    <string name="running">running</string>
+    <string name="stopped">stopped</string>
+</resources>
