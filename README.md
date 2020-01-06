@@ -1,0 +1,2 @@
+# iDrive
+Nowadays, the most distracting actions on the road aren’t the street performers or the flashing lights in populated cities; rather, they come from the buzz, chirps, and rings from your smartphone.   iDrive allows for smartphones to be able to recognize when the user is driving and silence all notifications the user until the user reaches their destination. Additionally, any incoming calls will be rejected with a text message, letting the caller know that the user is driving and cannot use their phone at the moment.
